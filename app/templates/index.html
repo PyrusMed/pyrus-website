@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block styles %}
+    {{super()}}
+    {% assets "index_css" %}
+        <link rel="stylesheet" href="{{ ASSET_URL }}" />
+    {% endassets %}
+{% endblock %}
+
+{% block scripts %}
+    {{super()}}
+    {% assets "index_js" %}
+        <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+    {% endassets %}
+{% endblock %}
+
+{% block app_content %}
+    <div class="title">
+        <h1>Bringing Catheter Ablation To Community Hospitals</h1>
+        <h2>No upfront capital investment or new staffing.</h2>
+        <button type="button" class="btn btn-primary">Learn More</button>
+    </div>
+{% endblock %}

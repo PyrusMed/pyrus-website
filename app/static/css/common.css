@@ -1,0 +1,12 @@
+.navbar {
+    background-color: white;
+}
+
+.navbar img {
+    padding: 5px 15px;
+    max-height: 40px;
+}
+
+.clear {
+    clear: both;
+}
