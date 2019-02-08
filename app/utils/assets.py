@@ -8,7 +8,7 @@ def init_assets(app):
 
         # App Enging doesn't support automatic building
         # so only auto build if in debug mode
-        env.auto_build = True
+        env.auto_build = app.debug
         app.logger.info('auto_build set to {}'.format(
             env.auto_build
         ))
@@ -17,11 +17,11 @@ def init_assets(app):
         env.manifest = 'file'
 
         bundles = {
-        
+
             'index_js': Bundle(
                 'js/common.js',
                 output='gen/index.js'),
-        
+
             'index_css': Bundle(
                 'css/bootstrap-extensions.css',
                 'css/common.css',

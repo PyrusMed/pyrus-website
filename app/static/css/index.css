@@ -1,3 +1,46 @@
-.title {
+html,
+body,
+.container {
+    height: 100%;
+}
+
+nav {
+    display: none;
+}
+
+.container {
+    position: relative;
     text-align: center;
+}
+
+.logo-container {
+    margin-bottom: 10%;
+}
+
+.logo-container .pyrus-logo-square-hollow {
+    width: 100px;
+}
+
+h1, h2 {
+    width: 100%;
+}
+
+.tagline-container {
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-family: Helvatica;
+    font-size: 3em;
+    color: #989898;
+}
+
+.anywhere {
+    font-style: italic;
+}
+
+h2 {
+    position: absolute;
+    bottom: 0;
+    font-size: 2em;
 }
