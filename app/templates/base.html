@@ -1,8 +1,13 @@
 {% extends 'bootstrap/base.html' %}
 
-{% block title %}
-    Pyrus{% if title %} - {{ title }}{% endif %}
+{% block metas %}
+    <meta name="description" content="Pyrus Medical is an early stage startup whose mission is to deliver simple, safe, endovascular care...anywhere." />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name"robots" content="index,follow" />
+    <meta name="keywords" content="pyrus,medical,vr,ar,cloud,cloud services,telerobotics,remote,endovascular,electrophysiology,interventional radiology" />
 {% endblock %}
+
+{% block title %}- Pyrus Medical{% endblock %}
 
 {% block navbar %}
     <nav class="navbar navbar-default sticky-top">
