@@ -1,4 +1,4 @@
-from flask import render_template
+from flask import redirect, render_template, url_for
 
 from app import app
 
@@ -9,3 +9,8 @@ def index():
         'index.html',
         title='Home'
     )
+
+@app.route('/<path:path>')
+def catch_all(path):
+    app.logger.info('User navigated to %s. Redirecting to index page', path)
+    return redirect(url_for('index'))
