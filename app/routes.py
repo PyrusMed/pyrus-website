@@ -10,6 +10,13 @@ def index():
         title='Home'
     )
 
+@app.route('/latencyTest')
+def latencyTest():
+    return render_template(
+        'latencyTest.html',
+        title='Latency Test'
+    )
+
 @app.route('/<path:path>')
 def catch_all(path):
     app.logger.info('User navigated to %s. Redirecting to index page', path)
