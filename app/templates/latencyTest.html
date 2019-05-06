@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}Latency Test {{super()}}{% endblock %}
+
+{% block styles %}
+    {{super()}}
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    {% assets "latencyTest_css" %}
+        <link rel="stylesheet" href="{{ ASSET_URL }}" />
+    {% endassets %}
+{% endblock %}
+
+{% block scripts %}
+    {{super()}}
+    {% assets "latencyTest_js" %}
+        <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+    {% endassets %}
+{% endblock %}
+
+{% block app_content %}
+    <div class="row">
+        <div class="col-12">
+            <h1>Pyrus Platform Latency Test</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <button type="button" class="btn btn-primary start">Start</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <label class="timer">01:15:35</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <label class="thankyou">Thank You!</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="latency">
+                Avg Latency: 18ms
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <h2 class="info"><a href="mailto:info@pyrusmedical.com">info@pyrusmedical.com</a></h2>
+        </div>
+    </div>
+{% endblock %}

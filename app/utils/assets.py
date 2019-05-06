@@ -27,6 +27,17 @@ def init_assets(app):
                 'css/common.css',
                 'css/index.css',
                 output='gen/index.css'),
+
+            'latencyTest_js': Bundle(
+                'js/common.js',
+                'js/latencyTest.js',
+                output='gen/latencyTest.js'),
+
+            'latencyTest_css': Bundle(
+                'css/bootstrap-extensions.css',
+                'css/common.css',
+                'css/latencyTest.css',
+                output='gen/latencyTest.css'),
         }
          
         env.register(bundles)

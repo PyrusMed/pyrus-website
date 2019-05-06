@@ -1,0 +1,40 @@
+html,
+body,
+.container {
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+h1 {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+button.start {
+    font-size: 2em;
+}
+
+label.timer, label.thankyou {
+    display: none;
+    font-size: 4em;
+}
+
+.latency {
+    display: none;
+    font-size: 1.5em;
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+    font-size: 2em;
+}
